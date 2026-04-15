@@ -1,0 +1,161 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f5f5f5;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#000;
+position:sticky;
+top:0;
+}
+
+.logo img{
+height:70px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:40px;
+}
+
+nav ul li a{
+color:white;
+font-weight:500;
+text-decoration:none;
+}
+
+nav ul li a:hover{
+color:#d4af37;
+}
+
+/* HERO */
+.hero{
+display:none;
+height:100vh;
+background:linear-gradient(to right,#000,#1a1a1a);
+color:white;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero.active{
+display:flex;
+animation:fade 1s;
+}
+
+.home-logo{
+width:150px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-family:'Playfair Display';
+font-size:42px;
+margin-bottom:10px;
+}
+
+.tagline{
+color:#d4af37;
+font-size:18px;
+margin-bottom:15px;
+}
+
+/* SECTIONS */
+.section{
+display:none;
+padding:80px;
+}
+
+.section.active{
+display:block;
+animation:fade 0.8s;
+}
+
+.section.dark{
+background:#0a0a0a;
+color:white;
+}
+
+/* CARDS */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.dark .card{
+background:#1a1a1a;
+color:white;
+}
+
+/* TEAM */
+.team-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:30px;
+}
+
+.team-member{
+text-align:center;
+}
+
+.team-member img{
+width:150px;
+height:150px;
+border-radius:50%;
+border:3px solid #d4af37;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50px;
+}
+
+/* FOOTER */
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* ANIMATION */
+@keyframes fade{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samarth Accounting Services</title>
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="hero active">
+    <img src="logo-big.png" class="home-logo">
+    <h1>Samarth Accounting Services</h1>
+    <p>Trusted financial experts helping businesses grow with accuracy, transparency, and smart planning.</p>
+    <p>We provide accounting, taxation, advisory, and financial solutions tailored to your needs.</p>
+    <p class="timing">Open Daily: 10 AM – 8 PM</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<h2>About Us</h2>
+
+<h3>Our Values</h3>
+<p>Core Values and a sense of purpose and direction allow us to focus on what’s really important are.</p>
+
+<ul>
+<li>Transparency</li>
+<li>Excellence in Quality</li>
+<li>Integrity & Commitment</li>
+<li>Solution Driven</li>
+<li>Team Spirit</li>
+</ul>
+
+<h3>Our Vision</h3>
+<p>To be the most renowned professional firm all over India.</p>
+
+<h3>Our Mission</h3>
+<p>To provide high quality accounting, auditing and advisory services.</p>
+
+<h3>THE BOTTOM LINE:</h3>
+<p>We help clients focus on growth while we manage finances.</p>
+
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section dark">
+<h2>Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<b>Accounting Services</b>
+<ul>
+<li>Accounting System Design & Implementation</li>
+<li>Financial Accounting</li>
+</ul>
+</div>
+
+<div class="card">
+<b>Financial Services</b>
+<ul>
+<li>Financial Accounting</li>
+<li>Management Accounting</li>
+<li>Business Accounting</li>
+<li>Advisory Services</li>
+<li>Project Report and financing</li>
+<li>Budgeting</li>
+<li>Financial Reporting</li>
+</ul>
+</div>
+
+<div class="card">
+<b>Tax Consultancy</b>
+<ul>
+<li>Direct Tax</li>
+<li>GST</li>
+<li>Returns Filing</li>
+<li>Tax Compliance</li>
+</ul>
+</div>
+
+<div class="card">
+<b>Set Up Operations</b>
+<ul>
+<li>Identifying Investment Opportunities</li>
+</ul>
+</div>
+
+</div>
+</section>
+
+<!-- TEAM -->
+<section id="team" class="section">
+<h2>Our Team</h2>
+
+<div class="team-container">
+
+<div class="team-member">
+<img src="member1.jpg">
+<h3>Shashikant Kulkarni</h3>
+<p>Tax Consultant</p>
+</div>
+
+<div class="team-member">
+<img src="member2.jpg">
+<h3>Charansing Shukaliya</h3>
+<p>LIC Agent</p>
+</div>
+
+<div class="team-member">
+<img src="member3.jpg">
+<h3>Govind Taur</h3>
+<p>Accountant</p>
+</div>
+
+<div class="team-member">
+<img src="member4.jpg">
+<h3>Vijay Sonwane</h3>
+<p>Accountant</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+<h2>Contact Us</h2>
+
+<p><b>Address:</b> Sonal Nagar, Jalna - 431203</p>
+<p><b>Mobile:</b> 9923011711</p>
+<p><b>Email:</b> shashikantsk7.0@gmail.com</p>
+
+<iframe 
+src="https://maps.google.com/maps?q=jalna&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300">
+</iframe>
+
+</section>
+
+<a href="https://wa.me/919923011711" class="whatsapp">Chat</a>
+
+<footer>
+<p>© 2026 Samarth Accounting Services</p>
+</footer>
+
+<script>
+const links = document.querySelectorAll("nav a");
+const sections = document.querySelectorAll("section");
+
+links.forEach(link => {
+link.addEventListener("click", function(e){
+e.preventDefault();
+
+sections.forEach(sec => sec.classList.remove("active"));
+
+const target = document.querySelector(this.getAttribute("href"));
+target.classList.add("active");
+});
+});
+</script>
+
+</body>
+</html>
