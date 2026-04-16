@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="google-site-verification" content="DG1HM7KAL4Nk8qjkPNwUv5PRqw7JgcHC5XuqQ3J6JGw" />
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Samarth Accounting Services</title>
+
 <link rel="stylesheet" href="styles.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Google Verification (keep yours if already added) -->
+<meta name="google-site-verification" content="">
 </head>
 
 <body>
@@ -29,11 +33,26 @@
 
 <!-- HOME -->
 <section id="home" class="hero active">
-    <img src="logo-big.png" class="home-logo">
+    <img src="logo.png" class="home-logo">
     <h1>Samarth Accounting Services</h1>
-    <p>Trusted financial experts helping businesses grow with accuracy, transparency, and smart planning.</p>
-    <p>We provide accounting, taxation, advisory, and financial solutions tailored to your needs.</p>
-    <p class="timing">Open Daily: 10 AM – 8 PM</p>
+
+    <p class="tagline">Precision. Trust. Growth.</p>
+
+    <p>
+    Samarth Accounting Services is a trusted firm providing professional accounting, taxation, and financial advisory services. 
+    We are committed to delivering accuracy, transparency, and efficiency in every service we offer.
+    </p>
+
+    <p>
+    Our team focuses on helping businesses and individuals manage their finances effectively, ensuring compliance and growth. 
+    We believe in building long-term relationships with our clients by providing reliable and result-oriented solutions.
+    </p>
+
+    <p>
+    With a strong foundation of integrity and expertise, we aim to simplify financial complexities and support our clients 
+    in achieving their business and personal financial goals.
+    </p>
+
 </section>
 
 <!-- ABOUT -->
@@ -41,8 +60,6 @@
 <h2>About Us</h2>
 
 <h3>Our Values</h3>
-<p>Core Values and a sense of purpose and direction allow us to focus on what’s really important are.</p>
-
 <ul>
 <li>Transparency</li>
 <li>Excellence in Quality</li>
@@ -55,21 +72,20 @@
 <p>To be the most renowned professional firm all over India.</p>
 
 <h3>Our Mission</h3>
-<p>To provide high quality accounting, auditing and advisory services.</p>
+<p>Delivering high-quality financial and advisory services with innovation and efficiency.</p>
 
 <h3>THE BOTTOM LINE:</h3>
-<p>We help clients focus on growth while we manage finances.</p>
-
+<p>We allow clients to focus on growth while we manage finances.</p>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="section dark">
-<h2>Services</h2>
+<h2>Our Services</h2>
 
 <div class="cards">
 
 <div class="card">
-<b>Accounting Services</b>
+<h3>Accounting Services</h3>
 <ul>
 <li>Accounting System Design & Implementation</li>
 <li>Financial Accounting</li>
@@ -77,20 +93,20 @@
 </div>
 
 <div class="card">
-<b>Financial Services</b>
+<h3>Financial Services</h3>
 <ul>
 <li>Financial Accounting</li>
 <li>Management Accounting</li>
 <li>Business Accounting</li>
 <li>Advisory Services</li>
-<li>Project Report and financing</li>
+<li>Project Report and Financing</li>
 <li>Budgeting</li>
 <li>Financial Reporting</li>
 </ul>
 </div>
 
 <div class="card">
-<b>Tax Consultancy</b>
+<h3>Tax Consultancy</h3>
 <ul>
 <li>Direct Tax</li>
 <li>GST</li>
@@ -100,9 +116,19 @@
 </div>
 
 <div class="card">
-<b>Set Up Operations</b>
+<h3>Set Up Operations</h3>
 <ul>
 <li>Identifying Investment Opportunities</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Health Insurance</h3>
+<ul>
+<li>LIC Arogya Rakshak (Plan 906)</li>
+<li>LIC Cancer Cover (Plan 905)</li>
+<li>LIC Health Protection Plus (Plan 902)</li>
+<li>LIC Jeevan Arogya (Plan 904)</li>
 </ul>
 </div>
 
@@ -111,7 +137,7 @@
 
 <!-- TEAM -->
 <section id="team" class="section">
-<h2>Our Team</h2>
+<h2>Our Experts</h2>
 
 <div class="team-container">
 
@@ -151,13 +177,16 @@
 <p><b>Email:</b> shashikantsk7.0@gmail.com</p>
 
 <iframe 
-src="https://maps.google.com/maps?q=jalna&t=&z=13&ie=UTF8&iwloc=&output=embed"
+src="https://maps.google.com/maps?q=Sonal%20Nagar%20Jalna&t=&z=13&ie=UTF8&iwloc=&output=embed"
 width="100%" height="300">
 </iframe>
 
 </section>
 
 <a href="https://wa.me/919923011711" class="whatsapp">Chat</a>
+
+<!-- CREDIT -->
+<div class="credit">Created by Shlok Kulkarni</div>
 
 <footer>
 <p>© 2026 Samarth Accounting Services</p>
@@ -170,14 +199,14 @@ const sections = document.querySelectorAll("section");
 links.forEach(link => {
 link.addEventListener("click", function(e){
 e.preventDefault();
-
 sections.forEach(sec => sec.classList.remove("active"));
-
-const target = document.querySelector(this.getAttribute("href"));
-target.classList.add("active");
+document.querySelector(this.getAttribute("href")).classList.add("active");
 });
 });
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
