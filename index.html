@@ -7,109 +7,103 @@
 
 <link rel="stylesheet" href="styles.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-<meta name="description" content="Samarth Accounting Services in Jalna offering accounting, GST, tax consultancy and financial services.">
-
+<meta name="description" content="Accounting, GST, Tax Consultancy in Jalna">
 </head>
 
 <body>
 
 <header>
-    <div class="logo">
-        <img src="logo.png">
-    </div>
+<div class="logo"><img src="logo.png"></div>
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="nav">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#team">Team</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 </header>
 
-<!-- HOME -->
+<!-- HERO -->
 <section id="home" class="hero active">
-    <img src="logo-big.png" class="home-logo">
-    <h1>Samarth Accounting Services</h1>
 
-    <p class="tagline">Precision. Trust. Growth.</p>
+<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1554224155-6726b3ff858f')"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1521791136064-7986c2920216')"></div>
 
-    <p>
-    Samarth Accounting Services is a trusted firm providing professional accounting, taxation, and financial advisory services.
-    We are committed to delivering accuracy, transparency, and efficiency.
-    </p>
+<div class="hero-content">
+<h1>Driving Financial Excellence</h1>
+<p>Professional Accounting, Taxation & Advisory Services</p>
+<a href="#services" class="btn">Explore Services</a>
+</div>
 
-    <p>
-    Our team helps businesses and individuals manage finances effectively and ensures compliance with regulations.
-    </p>
+</section>
 
-    <p>
-    We focus on long-term relationships and growth-oriented solutions for our clients.
-    </p>
+<!-- STATS -->
+<section class="stats">
+<div><h2>10+</h2><p>Years Experience</p></div>
+<div><h2>500+</h2><p>Clients</p></div>
+<div><h2>1000+</h2><p>Projects</p></div>
+<div><h2>100%</h2><p>Satisfaction</p></div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
 <h2>About Us</h2>
 
+<p>Samarth Accounting Services provides professional financial solutions with trust and accuracy.</p>
+
 <ul>
 <li>Transparency</li>
-<li>Excellence in Quality</li>
-<li>Integrity & Commitment</li>
-<li>Solution Driven</li>
+<li>Integrity</li>
+<li>Excellence</li>
 <li>Team Spirit</li>
 </ul>
 
-<p><b>Vision:</b> To be the most renowned professional firm in India.</p>
-<p><b>Mission:</b> Delivering high-quality financial services efficiently.</p>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="section dark">
-<h2>Our Services</h2>
+<h2>Services</h2>
 
 <div class="cards">
 
 <div class="card">
-<h3>Accounting Services</h3>
+<h3>Accounting</h3>
 <ul>
-<li>Accounting System Design</li>
+<li>Accounting System</li>
 <li>Financial Accounting</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Financial Services</h3>
+<h3>Financial</h3>
 <ul>
-<li>Financial Accounting</li>
 <li>Management Accounting</li>
-<li>Business Accounting</li>
 <li>Budgeting</li>
-<li>Financial Reporting</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Tax Consultancy</h3>
+<h3>Tax</h3>
 <ul>
-<li>Direct Tax</li>
 <li>GST</li>
-<li>Returns Filing</li>
-<li>Compliance</li>
+<li>Returns</li>
 </ul>
 </div>
 
 <div class="card">
 <h3>Health Insurance</h3>
 <ul>
-<li>LIC Arogya Rakshak (906)</li>
-<li>LIC Cancer Cover (905)</li>
-<li>LIC Health Protection Plus (902)</li>
-<li>LIC Jeevan Arogya (904)</li>
+<li>LIC Arogya Rakshak</li>
+<li>LIC Cancer Cover</li>
+<li>LIC Health Protection Plus</li>
+<li>LIC Jeevan Arogya</li>
 </ul>
 </div>
 
@@ -118,7 +112,7 @@
 
 <!-- TEAM -->
 <section id="team" class="section">
-<h2>Our Team</h2>
+<h2>Team</h2>
 
 <div class="team-container">
 
@@ -151,10 +145,10 @@
 
 <!-- CONTACT -->
 <section id="contact" class="section dark">
-<h2>Contact Us</h2>
+<h2>Contact</h2>
 
 <p><b>Address:</b> Sonal Nagar, Jalna - 431203</p>
-<p><b>Mobile:</b> 9923011711</p>
+<p><b>Mobile:</b> 9923011711, 9881855227</p>
 <p><b>Email:</b> shashikantsk7.0@gmail.com</p>
 
 <iframe src="https://www.google.com/maps?q=Sonal+Nagar+Jalna&output=embed"
@@ -162,7 +156,13 @@ width="100%" height="300"></iframe>
 
 </section>
 
-<a href="https://wa.me/919923011711" class="whatsapp">Chat</a>
+<!-- WHATSAPP -->
+<div class="whatsapp-main" onclick="toggleWhatsapp()">💬</div>
+
+<div class="whatsapp-popup" id="whatsappPopup">
+<a href="https://wa.me/919923011711" target="_blank">9923011711</a>
+<a href="https://wa.me/919881855227" target="_blank">9881855227</a>
+</div>
 
 <div class="credit">Created by Shlok Kulkarni</div>
 
@@ -171,15 +171,26 @@ width="100%" height="300"></iframe>
 </footer>
 
 <script>
-const links = document.querySelectorAll("nav a");
-const sections = document.querySelectorAll("section");
+function toggleMenu(){
+document.getElementById("nav").classList.toggle("active");
+}
 
-links.forEach(link => {
-link.addEventListener("click", function(e){
-e.preventDefault();
-sections.forEach(sec => sec.classList.remove("active"));
-document.querySelector(this.getAttribute("href")).classList.add("active");
-});
+function toggleWhatsapp(){
+document.getElementById("whatsappPopup").classList.toggle("show");
+}
+
+let slides=document.querySelectorAll(".slide");
+let i=0;
+
+setInterval(()=>{
+slides[i].classList.remove("active");
+i=(i+1)%slides.length;
+slides[i].classList.add("active");
+},4000);
+</script>
+
+</body>
+</html>
 });
 </script>
 
