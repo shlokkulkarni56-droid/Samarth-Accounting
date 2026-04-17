@@ -4,79 +4,74 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Samarth Accounting Services</title>
-
 <link rel="stylesheet" href="styles.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-<meta name="description" content="Accounting, GST, Tax Consultancy in Jalna">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-<div class="logo"><img src="logo.png"></div>
+    <div class="logo">
+        <img src="logo.png">
+    </div>
 
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-<nav id="nav">
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#team">Team</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#contact" class="contact-btn">Contact</a>
+    </nav>
 </header>
 
 <!-- HERO -->
-<section id="home" class="hero active">
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Samarth Accounting Services</h1>
+        <p class="tagline">Precision • Trust • Growth</p>
 
-<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1554224155-6726b3ff858f')"></div>
-<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1521791136064-7986c2920216')"></div>
+        <p>
+        We provide professional accounting, taxation and financial advisory services 
+        to businesses and individuals with accuracy and integrity.
+        </p>
 
-<div class="hero-content">
-<h1>Driving Financial Excellence</h1>
-<p>Professional Accounting, Taxation & Advisory Services</p>
-<a href="#services" class="btn">Explore Services</a>
-</div>
+        <p>
+        Our mission is to simplify financial management and help our clients grow with confidence.
+        </p>
 
-</section>
-
-<!-- STATS -->
-<section class="stats">
-<div><h2>10+</h2><p>Years Experience</p></div>
-<div><h2>500+</h2><p>Clients</p></div>
-<div><h2>1000+</h2><p>Projects</p></div>
-<div><h2>100%</h2><p>Satisfaction</p></div>
+        <a href="#services" class="btn">Our Services</a>
+    </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
 <h2>About Us</h2>
 
-<p>Samarth Accounting Services provides professional financial solutions with trust and accuracy.</p>
+<p>
+We are a trusted firm offering accounting, taxation and advisory services with a focus on quality and transparency.
+</p>
 
 <ul>
 <li>Transparency</li>
-<li>Integrity</li>
-<li>Excellence</li>
+<li>Excellence in Quality</li>
+<li>Integrity & Commitment</li>
+<li>Solution Driven</li>
 <li>Team Spirit</li>
 </ul>
 
 </section>
 
 <!-- SERVICES -->
-<section id="services" class="section dark">
-<h2>Services</h2>
+<section id="services" class="section light">
+<h2>Our Services</h2>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
 <h3>Accounting</h3>
 <ul>
-<li>Accounting System</li>
+<li>Accounting System Design</li>
 <li>Financial Accounting</li>
 </ul>
 </div>
@@ -90,20 +85,21 @@
 </div>
 
 <div class="card">
-<h3>Tax</h3>
+<h3>Tax Consultancy</h3>
 <ul>
+<li>Direct Tax</li>
 <li>GST</li>
-<li>Returns</li>
+<li>Returns Filing</li>
 </ul>
 </div>
 
 <div class="card">
 <h3>Health Insurance</h3>
 <ul>
-<li>LIC Arogya Rakshak</li>
-<li>LIC Cancer Cover</li>
-<li>LIC Health Protection Plus</li>
-<li>LIC Jeevan Arogya</li>
+<li>LIC Arogya Rakshak (906)</li>
+<li>LIC Cancer Cover (905)</li>
+<li>LIC Health Protection Plus (902)</li>
+<li>LIC Jeevan Arogya (904)</li>
 </ul>
 </div>
 
@@ -112,29 +108,29 @@
 
 <!-- TEAM -->
 <section id="team" class="section">
-<h2>Team</h2>
+<h2>Our Team</h2>
 
-<div class="team-container">
+<div class="grid">
 
-<div class="team-member">
+<div class="card center">
 <img src="member1.jpg">
 <h3>Shashikant Kulkarni</h3>
 <p>Tax Consultant</p>
 </div>
 
-<div class="team-member">
+<div class="card center">
 <img src="member2.jpg">
 <h3>Charansing Shukaliya</h3>
 <p>LIC Agent</p>
 </div>
 
-<div class="team-member">
+<div class="card center">
 <img src="member3.jpg">
 <h3>Govind Taur</h3>
 <p>Accountant</p>
 </div>
 
-<div class="team-member">
+<div class="card center">
 <img src="member4.jpg">
 <h3>Vijay Sonwane</h3>
 <p>Accountant</p>
@@ -144,7 +140,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section dark">
+<section id="contact" class="section light">
 <h2>Contact</h2>
 
 <p><b>Address:</b> Sonal Nagar, Jalna - 431203</p>
@@ -157,41 +153,19 @@ width="100%" height="300"></iframe>
 </section>
 
 <!-- WHATSAPP -->
-<div class="whatsapp-main" onclick="toggleWhatsapp()">💬</div>
+<div class="whatsapp" onclick="toggleWA()">💬</div>
 
-<div class="whatsapp-popup" id="whatsappPopup">
-<a href="https://wa.me/919923011711" target="_blank">9923011711</a>
-<a href="https://wa.me/919881855227" target="_blank">9881855227</a>
+<div class="wa-box" id="waBox">
+<a href="https://wa.me/919923011711">9923011711</a>
+<a href="https://wa.me/919881855227">9881855227</a>
 </div>
 
 <div class="credit">Created by Shlok Kulkarni</div>
 
-<footer>
-<p>© 2026 Samarth Accounting Services</p>
-</footer>
-
 <script>
-function toggleMenu(){
-document.getElementById("nav").classList.toggle("active");
+function toggleWA(){
+document.getElementById("waBox").classList.toggle("show");
 }
-
-function toggleWhatsapp(){
-document.getElementById("whatsappPopup").classList.toggle("show");
-}
-
-let slides=document.querySelectorAll(".slide");
-let i=0;
-
-setInterval(()=>{
-slides[i].classList.remove("active");
-i=(i+1)%slides.length;
-slides[i].classList.add("active");
-},4000);
-</script>
-
-</body>
-</html>
-});
 </script>
 
 </body>
