@@ -1,193 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Samarth Accounting Services</title>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Poppins;background:#f8f9fb;}
 
-<link rel="stylesheet" href="styles.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-<meta name="description" content="Accounting, GST, Tax Consultancy in Jalna">
-</head>
-
-<body>
-
-<header>
-<div class="logo"><img src="logo.png"></div>
-
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-<nav id="nav">
-<ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#team">Team</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</header>
-
-<!-- HERO -->
-<section id="home" class="hero active">
-
-<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1554224155-6726b3ff858f')"></div>
-<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1521791136064-7986c2920216')"></div>
-
-<div class="hero-content">
-<h1>Driving Financial Excellence</h1>
-<p>Professional Accounting, Taxation & Advisory Services</p>
-<a href="#services" class="btn">Explore Services</a>
-</div>
-
-</section>
-
-<!-- STATS -->
-<section class="stats">
-<div><h2>10+</h2><p>Years Experience</p></div>
-<div><h2>500+</h2><p>Clients</p></div>
-<div><h2>1000+</h2><p>Projects</p></div>
-<div><h2>100%</h2><p>Satisfaction</p></div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-<h2>About Us</h2>
-
-<p>Samarth Accounting Services provides professional financial solutions with trust and accuracy.</p>
-
-<ul>
-<li>Transparency</li>
-<li>Integrity</li>
-<li>Excellence</li>
-<li>Team Spirit</li>
-</ul>
-
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section dark">
-<h2>Services</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Accounting</h3>
-<ul>
-<li>Accounting System</li>
-<li>Financial Accounting</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Financial</h3>
-<ul>
-<li>Management Accounting</li>
-<li>Budgeting</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Tax</h3>
-<ul>
-<li>GST</li>
-<li>Returns</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Health Insurance</h3>
-<ul>
-<li>LIC Arogya Rakshak</li>
-<li>LIC Cancer Cover</li>
-<li>LIC Health Protection Plus</li>
-<li>LIC Jeevan Arogya</li>
-</ul>
-</div>
-
-</div>
-</section>
-
-<!-- TEAM -->
-<section id="team" class="section">
-<h2>Team</h2>
-
-<div class="team-container">
-
-<div class="team-member">
-<img src="member1.jpg">
-<h3>Shashikant Kulkarni</h3>
-<p>Tax Consultant</p>
-</div>
-
-<div class="team-member">
-<img src="member2.jpg">
-<h3>Charansing Shukaliya</h3>
-<p>LIC Agent</p>
-</div>
-
-<div class="team-member">
-<img src="member3.jpg">
-<h3>Govind Taur</h3>
-<p>Accountant</p>
-</div>
-
-<div class="team-member">
-<img src="member4.jpg">
-<h3>Vijay Sonwane</h3>
-<p>Accountant</p>
-</div>
-
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section dark">
-<h2>Contact</h2>
-
-<p><b>Address:</b> Sonal Nagar, Jalna - 431203</p>
-<p><b>Mobile:</b> 9923011711, 9881855227</p>
-<p><b>Email:</b> shashikantsk7.0@gmail.com</p>
-
-<iframe src="https://www.google.com/maps?q=Sonal+Nagar+Jalna&output=embed"
-width="100%" height="300"></iframe>
-
-</section>
-
-<!-- WHATSAPP -->
-<div class="whatsapp-main" onclick="toggleWhatsapp()">💬</div>
-
-<div class="whatsapp-popup" id="whatsappPopup">
-<a href="https://wa.me/919923011711" target="_blank">9923011711</a>
-<a href="https://wa.me/919881855227" target="_blank">9881855227</a>
-</div>
-
-<div class="credit">Created by Shlok Kulkarni</div>
-
-<footer>
-<p>© 2026 Samarth Accounting Services</p>
-</footer>
-
-<script>
-function toggleMenu(){
-document.getElementById("nav").classList.toggle("active");
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-function toggleWhatsapp(){
-document.getElementById("whatsappPopup").classList.toggle("show");
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#1a2b49;
+font-weight:500;
 }
 
-let slides=document.querySelectorAll(".slide");
-let i=0;
+.contact-btn{
+background:#1a2b49;
+color:white;
+padding:8px 15px;
+border-radius:5px;
+}
 
-setInterval(()=>{
-slides[i].classList.remove("active");
-i=(i+1)%slides.length;
-slides[i].classList.add("active");
-},4000);
-</script>
+/* HERO */
+.hero{
+background:#1a2b49;
+color:white;
+padding:100px 60px;
+}
 
-</body>
-</html>
+.hero h1{font-size:40px;}
+.tagline{margin:10px 0;color:#ccc;}
+.btn{
+display:inline-block;
+margin-top:20px;
+background:#00aaff;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+}
+
+/* SECTIONS */
+.section{
+padding:60px;
+}
+
+.light{
+background:white;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.center{text-align:center;}
+.card img{
+width:100px;height:100px;border-radius:50%;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+width:50px;height:50px;
+display:flex;align-items:center;justify-content:center;
+border-radius:50%;
+cursor:pointer;
+}
+
+.wa-box{
+position:fixed;
+bottom:80px;
+right:20px;
+background:white;
+display:none;
+flex-direction:column;
+}
+
+.wa-box.show{display:flex;}
+.wa-box a{
+padding:10px 20px;
+text-decoration:none;
+color:black;
+border-bottom:1px solid #eee;
+}
+
+/* CREDIT */
+.credit{
+position:fixed;
+bottom:10px;
+left:10px;
+font-size:12px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+header{flex-direction:column;}
+.hero{padding:60px 20px;}
+}
