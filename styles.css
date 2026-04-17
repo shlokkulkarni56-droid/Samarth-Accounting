@@ -1,4 +1,3 @@
-*{
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -192,7 +191,3 @@ slides[i].classList.add("active");
 
 </body>
 </html>
-padding:30px 15px;
-}
-
-}
