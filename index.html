@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,60 +6,45 @@
 <title>Samarth Accounting Services</title>
 
 <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <header>
-    <div class="logo">
-        <img src="logo.png">
-    </div>
+<div class="logo"><img src="logo.png"></div>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#team">Team</a>
-        <a href="#contact" class="contact-btn">Contact</a>
-    </nav>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#team">Team</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<!-- HOME -->
+<!-- HERO SLIDER -->
 <section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Samarth Accounting Services</h1>
-        <p class="tagline">Precision • Trust • Growth</p>
 
-        <p>
-        We provide professional accounting, taxation and financial advisory services 
-        to businesses and individuals with accuracy and integrity.
-        </p>
+<div class="slides">
+<div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1554224155-6726b3ff858f')"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a')"></div>
+<div class="slide" style="background-image:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf')"></div>
+</div>
 
-        <p>
-        Our mission is to simplify financial management and help our clients grow with confidence.
-        </p>
+<div class="hero-content glass">
+<h1>Samarth Accounting Services</h1>
+<p>Precision • Trust • Growth</p>
+<a href="#services" class="btn">Explore Services</a>
+</div>
 
-        <a href="#services" class="btn">Our Services</a>
-    </div>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
 <h2>About Us</h2>
-
-<p>
-We are a trusted firm offering accounting, taxation and advisory services with a focus on quality and transparency.
-</p>
-
-<ul>
-<li>Transparency</li>
-<li>Excellence in Quality</li>
-<li>Integrity & Commitment</li>
-<li>Solution Driven</li>
-<li>Team Spirit</li>
-</ul>
-
+<p>We provide professional accounting, taxation and advisory services with accuracy and trust.</p>
 </section>
 
 <!-- SERVICES -->
@@ -68,7 +53,7 @@ We are a trusted firm offering accounting, taxation and advisory services with a
 
 <div class="grid">
 
-<div class="card">
+<div class="card glass">
 <h3>Accounting</h3>
 <ul>
 <li>Accounting System Design</li>
@@ -76,7 +61,7 @@ We are a trusted firm offering accounting, taxation and advisory services with a
 </ul>
 </div>
 
-<div class="card">
+<div class="card glass">
 <h3>Financial</h3>
 <ul>
 <li>Management Accounting</li>
@@ -84,22 +69,22 @@ We are a trusted firm offering accounting, taxation and advisory services with a
 </ul>
 </div>
 
-<div class="card">
+<div class="card glass">
 <h3>Tax Consultancy</h3>
 <ul>
-<li>Direct Tax</li>
 <li>GST</li>
-<li>Returns Filing</li>
+<li>Returns</li>
 </ul>
 </div>
 
-<div class="card">
-<h3>Health Insurance</h3>
+<div class="card glass">
+<h3>Key Reasons to Buy LIC</h3>
 <ul>
-<li>LIC Arogya Rakshak (906)</li>
-<li>LIC Cancer Cover (905)</li>
-<li>LIC Health Protection Plus (902)</li>
-<li>LIC Jeevan Arogya (904)</li>
+<li>Government-Backed Security</li>
+<li>High Claim Settlement Ratio</li>
+<li>Tax Benefits (80C, 10(10D))</li>
+<li>Disciplined Savings</li>
+<li>Loan Facility</li>
 </ul>
 </div>
 
@@ -163,10 +148,22 @@ width="100%" height="300"></iframe>
 <div class="credit">Created by Shlok Kulkarni</div>
 
 <script>
+let slides=document.querySelectorAll(".slide");
+let index=0;
+
+setInterval(()=>{
+slides[index].classList.remove("active");
+index=(index+1)%slides.length;
+slides[index].classList.add("active");
+},4000);
+
 function toggleWA(){
 document.getElementById("waBox").classList.toggle("show");
 }
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
